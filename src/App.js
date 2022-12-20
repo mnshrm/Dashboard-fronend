@@ -1,5 +1,11 @@
+import Form from "./Components/Authentication/Form";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Form />
+    </>
+  );
 }
 
 export default App;
