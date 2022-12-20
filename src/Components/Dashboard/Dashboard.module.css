@@ -1,0 +1,11 @@
+.dashboard {
+  display: grid;
+  padding: 1%;
+  grid-template-columns: 15rem repeat(1, 1fr);
+  grid-template-rows: 4rem repeat(2, 1fr);
+  height: 100vh;
+  width: 100%;
+  background-color: transparent;
+  column-gap: 10px;
+  row-gap: 10px;
+}

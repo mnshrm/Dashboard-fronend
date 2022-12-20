@@ -4,8 +4,8 @@ import Dashboard from "./Components/Dashboard/Dashboard";
 function App() {
   return (
     <>
-      <Form />
-      {/* <Dashboard /> */}
+      {/* <Form /> */}
+      <Dashboard />
     </>
   );
 }

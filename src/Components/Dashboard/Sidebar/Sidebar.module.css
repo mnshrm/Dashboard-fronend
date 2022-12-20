@@ -1,0 +1,29 @@
+.sidebar {
+  grid-row: 2/4;
+  border: 2px solid rgb(69, 58, 58);
+}
+
+.sidebar h1 {
+  font-family: "Montserrat";
+  display: inline-block;
+  margin: 10px;
+}
+
+.sidebar ul {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  list-style: none;
+}
+
+.sidebar li {
+  width: fit-content;
+  margin: 10px 0;
+  border-bottom: 2px solid transparent;
+}
+
+.sidebar li:hover {
+  cursor: pointer;
+  border-color: greenyellow;
+  transition: 0.1s all ease-in;
+  color: green;
+}

@@ -1,0 +1,31 @@
+.navbar {
+  /* background-color: red; */
+  grid-column: 1/3;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  border: 2px solid rgb(69, 58, 58);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.about {
+  margin-right: 1rem;
+  border-bottom: 2px solid white;
+}
+
+.about:hover {
+  border-color: yellowgreen;
+  cursor: pointer;
+  transition: 0.2s all ease-in;
+}
+
+.navbar h1 {
+  display: inline-block;
+}
+
+.avatar {
+  margin-left: auto;
+}
