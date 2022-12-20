@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Card from "../UI/Card";
+import Background from "./Background";
 import styles from "./Form.module.css";
 import LogIn from "./Form/LogIn";
 import SignUp from "./Form/SignUp";
@@ -13,6 +14,7 @@ const Form = () => {
 
   return (
     <Card className={styles["form-bg-card"]}>
+      <Background />
       {option === 0 ? (
         <LogIn optionChangeHandler={onClickHandler} />
       ) : (
