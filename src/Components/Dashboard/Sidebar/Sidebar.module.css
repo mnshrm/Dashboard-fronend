@@ -24,6 +24,6 @@
 .sidebar li:hover {
   cursor: pointer;
   border-color: greenyellow;
-  transition: 0.1s all ease-in;
   color: green;
+  transition: 0.1s all ease-in;
 }

@@ -1,29 +1,24 @@
 import React from "react";
 import styles from "./Sidebar.module.css";
 import Card from "../../UI/Card";
+import Option from "./Option";
+
+const options = [
+  { heading: "Bar Chart", icon: "fa-regular fa-chart-bar" },
+  { heading: "Line Chart", icon: "fa-solid fa-chart-line" },
+  { heading: "Scatter Chart", icon: "fa-brands fa-uncharted" },
+  { heading: "Map", icon: "fa-solid fa-earth-americas" },
+  { heading: "Upload Image", icon: "fa-solid fa-upload" },
+];
 
 const Sidebar = () => {
   return (
     <Card className={styles.sidebar}>
       <h1>Options</h1>
       <ul>
-        <li>
-          <i class="fa-solid fa-chart-column"></i> Bar chart
-        </li>
-        <li>
-          <i class="fa-solid fa-chart-line"></i> Line chart
-        </li>
-        <li>
-          <i class="fa-solid fa-calculator"></i> Graph
-        </li>
-        <li>
-          <i class="fa-solid fa-earth-americas"></i> Map
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <i class="fa-solid fa-upload"></i> Upload file
-        </li>
+        {options.map((option, ind) => (
+          <Option key={ind} index={ind} {...option} />
+        ))}
       </ul>
     </Card>
   );

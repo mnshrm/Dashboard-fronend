@@ -10,3 +10,9 @@
   display: inline-block;
   border-bottom: 2px solid;
 }
+
+.chart {
+  width: 90% !important;
+  height: 60%;
+  padding: 10px;
+}
