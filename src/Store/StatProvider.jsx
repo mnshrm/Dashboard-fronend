@@ -2,7 +2,7 @@ import StatisticContext from "./StatisticContext";
 import React, { useState } from "react";
 
 const StatProvider = (props) => {
-  const [option, setOption] = useState(3);
+  const [option, setOption] = useState(0);
 
   const changeOption = (opt) => {
     setOption(opt);

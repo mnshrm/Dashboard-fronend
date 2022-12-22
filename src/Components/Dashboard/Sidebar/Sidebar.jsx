@@ -8,7 +8,7 @@ const options = [
   { heading: "Line Chart", icon: "fa-solid fa-chart-line" },
   { heading: "Scatter Chart", icon: "fa-brands fa-uncharted" },
   { heading: "Map", icon: "fa-solid fa-earth-americas" },
-  { heading: "Upload Image", icon: "fa-solid fa-upload" },
+  { heading: "Upload File", icon: "fa-solid fa-upload" },
 ];
 
 const Sidebar = () => {

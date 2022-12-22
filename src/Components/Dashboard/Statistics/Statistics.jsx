@@ -6,12 +6,14 @@ import LineChart from "./Charts/LineChart";
 import ScatterChart from "./Charts/ScatterChart";
 import Map from "./Charts/Map";
 import StatisticContext from "../../../Store/StatisticContext";
+import Spreadsheet from "./spreadsheet/Spreadsheet";
 
 const options = [
   { heading: "Bar Chart", chart: <BarChart /> },
   { heading: "Line Chart", chart: <LineChart /> },
   { heading: "Scatter Chart", chart: <ScatterChart /> },
   { heading: "Map", chart: <Map /> },
+  { heading: "Upload spreadsheet", chart: <Spreadsheet /> },
 ];
 
 const Statistics = () => {
