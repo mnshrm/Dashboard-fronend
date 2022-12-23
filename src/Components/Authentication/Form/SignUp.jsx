@@ -22,13 +22,16 @@ const SignUp = (props) => {
     const emailIsValid = formData.email.trim().includes("@");
     if (nameLength >= 4 && passLength >= 8 && emailIsValid) {
       ctx.setLoading(true);
-      const res = await fetch("http://localhost:5000/api/register", {
-        method: "post",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const res = await fetch(
+        "https://grand-gnome-5e4f7a.netlify.app/api/register",
+        {
+          method: "post",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const resData = await res.json();
       if (resData.success) {

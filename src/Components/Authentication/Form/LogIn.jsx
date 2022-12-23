@@ -16,13 +16,16 @@ const LogIn = (props) => {
       formData.email.trim().length !== 0 &&
       formData.password.trim().length !== 0
     ) {
-      const res = await fetch("http://localhost:5000/api/login", {
-        method: "post",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const res = await fetch(
+        "https://grand-gnome-5e4f7a.netlify.app/api/login",
+        {
+          method: "post",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
       const resData = await res.json();
       if (resData.success) {
         localStorage.setItem("token", resData.token);
